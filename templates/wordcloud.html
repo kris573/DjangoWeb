@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生成词云</title>
+</head>
+<body>
+<h1 style="color: black">生成词云</h1>
+<form class="" action="/gwordcloud/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="text_data">
+    <p></p>
+    <input type="submit" class="btn btn-default" value="生成词云">
+</form>
+</body>
+</html>

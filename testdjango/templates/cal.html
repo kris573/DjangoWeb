@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算页面</title>
+</head>
+<body>
+<h1 style="color: blue">货量预测系统</h1>
+<form method="POST" action="/cal">
+    {% csrf_token %}
+    第一个数字<input type="number" name="valueA"><br>
+    第二个数字<input type="number" name="valueB"><br>
+    第三个数字<input type="number" name="valueC"><br>
+    第四个数字<input type="number" name="valueD"><br>
+    第五个数字<input type="number" name="valueE"><br>
+    第六个数字<input type="number" name="valueF">
+    <input type="submit" value="提交计算">
+</form>
+</body>
+</html>

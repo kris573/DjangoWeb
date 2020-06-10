@@ -29,10 +29,15 @@
 {#{% load static %}#}
 {#<img src="{% static "jd.jpg" %}" alt="京东标识" height=100 width=100 />#}
 <div>
-<p></p>
-<form class="" action="/gwordcloud/" method="post" enctype="multipart/form-data" >
+    <form class="" action="/samplecity/" method="post" >
     {% csrf_token %}
-    <input type="file" name="text-files">
+    <p></p>
+    <input type="submit"  value="查看样例">
+</form>
+<p></p>
+<form class="" action="/citycorrect/" method="post" enctype="multipart/form-data" >
+    {% csrf_token %}
+    <input type="file" name="excel_data">
     <p></p>
     <input type="submit" class="btn btn-default" value="开始匹配">
 </form>

@@ -24,5 +24,8 @@ urlpatterns = [
     path('cal/',views.Cal),
     path('wordcloud/',views.wordcloud),
     path('gwordcloud/',views.gwordcloud),
-    path('sample/',views.sample)
+    path('sample/',views.sample),
+    path('samplecity/',views.samplecity),
+    path('citycor/',views.citycor),
+    path('citycorrect/',views.citycorrect)
 ]

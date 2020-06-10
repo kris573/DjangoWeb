@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
          <title>SCCC自动化页面</title>
     <style>
+        body{
+            background-color: bisque;
+        }
         *{margin:0;padding:0}
         .nav{background:#abc;height:3rem;display:block}
         .list{z-index:0;display:block;}
@@ -37,6 +40,31 @@
                 margin-left:1rem
             }
         }
+        #box {
+    display: flex;
+    flex-direction:row;
+
+}
+#box div {
+	width: 600px;
+	height: 200px;
+	boder:25px;
+    padding: 25px;
+    margin: 25px;
+}
+#box2 {
+    display: flex;
+    flex-direction:row;
+
+}
+
+#box2 div {
+	width: 600px;
+	height: 200px;
+	boder:25px;
+    padding: 25px;
+    margin: 25px;
+}
     </style>
     </head>
 <body>
@@ -62,5 +90,60 @@
             </div>
     </nav>
 </header>
+<div id="box">
+	<div style="background-color:white;">
+        <a href="http:/127.0.0.1:8000/calpage"></a>
+        <center>
+            货量预测<p>
+            <p></p>
+            根据历年的货运量利用各种<p>算法对货运量进行预测，并对各种可能的算法进行对比
+        </center>
+    </div>
+	<div style="background-color:white;">
+        <center>
+            词云生成
+            <p>
+                通过对文件做词云分析可以帮助理解文中的内容
+            </p>
+        </center>
+    </div>
+	<div style="background-color:white;">
+        <center>
+            地址匹配
+            <p>
+                对不符合规范的地址进行清洗
+            </p>
+        </center>
+    </div>
+
+</div>
+<div id="box2">
+    <div style="background-color:white;">
+        <center>
+            可视化
+            <p>
+                交互式的可视化页面
+            </p>
+        </center>
+    </div>
+    <div style="background-color:white;">
+        <center>
+            园区规划
+            <p>
+                模块化的园区规划
+            </p>
+        </center>
+    </div>
+	<div style="background-color:white;">
+        <center>
+            网址导航
+            <p>
+                一些常用网址的导航业
+            </p>
+        </center>
+    </div>
+
+</div>
+
 </body>
 </html>

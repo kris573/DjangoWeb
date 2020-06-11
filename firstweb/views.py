@@ -82,3 +82,8 @@ def citycorrect(request):
     pdscity.to_excel(r'scity1.xlsx', header=0)
     return render(request,'resultcity.html')
 
+def visu(request):
+    return render(request,'visu.html')
+
+def yancheng(request):
+    return render(request,'yancheng.html')

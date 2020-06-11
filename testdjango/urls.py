@@ -27,5 +27,7 @@ urlpatterns = [
     path('sample/',views.sample),
     path('samplecity/',views.samplecity),
     path('citycor/',views.citycor),
-    path('citycorrect/',views.citycorrect)
+    path('citycorrect/',views.citycorrect),
+    path('visu/',views.visu),
+    path('yancheng/',views.yancheng)
 ]

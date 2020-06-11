@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>可视化界面</title>
+</head>
+<body>
+<div>
+<h1 style="color: black;text-align: center">货量预测系统</h1>
+    {% load static %}
+<img src="{% static "jd.jpg" %}" alt="京东标识" height=100 width=200  />
+</div>
+{#{% load static %}#}
+{#<img src="{% static "jd.jpg" %}" alt="京东标识" height=100 width=100 />#}
+<div>
+    <form class="" action="/yancheng/" method="post" >
+    {% csrf_token %}
+    <p></p>
+    <input type="submit"  value="查看样例">
+</form>
+
+<p></p>
+</div>
+</body>
+</html>

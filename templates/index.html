@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
          <title>SCCC自动化页面</title>
     <style>
+        .preurl{
+            cursor: pointer;
+        }
+        .wordcloudurl{
+            cursor: pointer;
+        }
+        .cityurl{
+            cursor: pointer;
+        }
+        .visurl{
+            cursor: pointer;
+        }
+        .wareurl{
+            cursor: pointer;
+        }
+        .addurl{
+            cursor: pointer;
+        }
+
+
+
         body{
             background-color: bisque;
         }
@@ -85,30 +106,40 @@
             <li><a href=" http://127.0.0.1:8000/calpage">货量预测</a></li>
             <li><a href="http://127.0.0.1:8000/wordcloud">词云生成</a></li>
             <li><a href="http://127.0.0.1:8000/citycor">地址匹配</a></li>
-            <li><a href="#">可视化</a></li>
+            <li><a href="http://127.0.0.1:8000/visu">可视化</a></li>
             <li><a href="#">网址导航</a></li>
             </div>
     </nav>
 </header>
 <div id="box">
-	<div style="background-color:white;">
-        <a href="http:/127.0.0.1:8000/calpage"></a>
+	<div class="preurl" style="background-color:white;" onclick="window.open('http://127.0.0.1:8000/calpage')">
+        
         <center>
+            <p>
+            <img src="/static/logistic.jpg" width="50" height="50">
+            </p>
+
             货量预测<p>
             <p></p>
             根据历年的货运量利用各种<p>算法对货运量进行预测，并对各种可能的算法进行对比
         </center>
     </div>
-	<div style="background-color:white;">
+	<div class="wordcloudurl" style="background-color:white;" onclick="window.open('http://127.0.0.1:8000/wordcloud')">
         <center>
+            <p>
+            <img src="/static/word.jpg" width="50" height="50">
+            </p>
             词云生成
             <p>
                 通过对文件做词云分析可以帮助理解文中的内容
             </p>
         </center>
     </div>
-	<div style="background-color:white;">
+	<div class="addurl" style="background-color:white;" onclick="window.open('http://127.0.0.1:8000/citycor')">
         <center>
+            <p>
+            <img src="/static/city.png" width="50" height="50">
+            </p>
             地址匹配
             <p>
                 对不符合规范的地址进行清洗
@@ -118,8 +149,11 @@
 
 </div>
 <div id="box2">
-    <div style="background-color:white;">
+    <div class="visurl" style="background-color:white;" onclick="window.open('http://127.0.0.1:8000/visu')">
         <center>
+             <p>
+            <img src="/static/visu.png" width="50" height="50">
+            </p>
             可视化
             <p>
                 交互式的可视化页面
@@ -128,6 +162,9 @@
     </div>
     <div style="background-color:white;">
         <center>
+              <p>
+            <img src="/static/log.png" width="50" height="50">
+            </p>
             园区规划
             <p>
                 模块化的园区规划
@@ -136,6 +173,9 @@
     </div>
 	<div style="background-color:white;">
         <center>
+              <p>
+            <img src="/static/int.png" width="50" height="50">
+            </p>
             网址导航
             <p>
                 一些常用网址的导航业

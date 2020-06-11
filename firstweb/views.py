@@ -45,7 +45,7 @@ def gwordcloud(request):
     # txt_freq例子为[(‘词a‘, 100),(‘词b‘, 90),(‘词c‘, 80)]
     # 从背景图片生成颜色值
     wordcloud.to_file("bbb.jpg")
-    return render(request,'resultword.html',con)
+    return render(request,'resultword.html')
 
 def sample(request):
     return render(request,'sample.html')

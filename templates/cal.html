@@ -39,6 +39,13 @@
     {% csrf_token %}
     <input type="file" name="excel_data">
     <p></p>
+    选择算法:
+<select id="update_carte_s" name="update_carte_s">
+    <option value="5!**8,9**!6!44.9">线性回归法</option>
+    <option value="6!**6,7**!6!24.95">弹性系数法</option>
+    <option value="7!**10**!3!27.95">灰色预测法</option>
+    <option value="8!**11,12**!8!39">时间序列法</option>
+</select>
     <input type="submit" class="btn btn-default" value="开始计算">
 </form>
 </div>

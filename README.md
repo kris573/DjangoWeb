@@ -1,2 +1,7 @@
-# testdjango
-这是一个django模板，方便自己熟悉django，以后会继续完善
+# 使用教程
+模型整体采用的是django框架，前台页面布局用了bootstrap
+将文件克隆到本地后，用编辑器打开，使用本地的服务器演示
+输入http://127.0.0.1:8000/index/即可显示
+
+# lisence
+MIT 

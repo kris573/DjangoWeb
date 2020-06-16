@@ -3,6 +3,6 @@
 将文件克隆到本地后，用编辑器打开，使用本地的服务器演示
 输入 http://127.0.0.1:8000/index
 
-
+![展示图](https://github.com/kris573/testdjango/blob/master/imgs/sccc.png)
 # lisence
 MIT 

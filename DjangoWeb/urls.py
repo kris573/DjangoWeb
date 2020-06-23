@@ -29,5 +29,6 @@ urlpatterns = [
     path('citycor/',views.citycor),
     path('citycorrect/',views.citycorrect),
     path('visu/',views.visu),
-    path('yancheng/',views.yancheng)
+    path('yancheng/',views.yancheng),
+    path('export/', views.export_users_csv, name='export_users_csv'),
 ]

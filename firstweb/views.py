@@ -1,3 +1,4 @@
+from __future__ import unicode_literals
 from django.shortcuts import render
 import matplotlib.pyplot as plt
 from scipy import optimize
@@ -8,8 +9,21 @@ import pandas as pd
 import re
 import jieba
 from wordcloud import WordCloud
+import csv
+from django.http import HttpResponse
+from django.contrib.auth.models import User
+from models import cal
 
-# Create your views here.
+def export_users_csv(request):
+    response = HttpResponse(content_type='text/csv')
+    response['Content-Disposition'] = 'attachment; filename="users.csv"'
+    writer = csv.writer(response)
+    writer.writerow(['Username', 'First name', 'Last name', 'Email address'])
+    users = User.objects.all().values_list('username', 'first_name', 'last_name', 'email')
+    for user in users:
+        writer.writerow(user)
+    return response
+
 
 def index(request):
     return render(request,'index.html')
@@ -28,6 +42,7 @@ def Cal(request):
         result.append(int(float(model.predict(i))))
     # result = int(float(model.predict(2024)))
     #result = int(value_a)+int(value_b)+int(value_c)+int(value_d)+int(value_e)+int(value_f)
+    cal.objects.create(time=X,data=y)
     return render(request,'result.html',context={'data':result})
 
 def wordcloud(request):
